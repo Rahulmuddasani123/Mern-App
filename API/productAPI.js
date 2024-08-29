@@ -5,6 +5,7 @@ const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const multer = require('multer');
 const { ObjectId } = require('mongodb');
+import { API_URL } from "../Constants";
 
 productApp.use(express.json());
 
@@ -29,7 +30,7 @@ const upload = multer({ storage: storage });
 
 
 // Route to create product
-    productApp.post("/createProduct", upload.single('ProductImage'), expressAsyncHandler(async (request, response) => {
+    productApp.post(`${API_URL}/createProduct`, upload.single('ProductImage'), expressAsyncHandler(async (request, response) => {
     let newProduct = JSON.parse(request.body.productObj);
 
     newProduct.productImage = request.file.path;
@@ -42,7 +43,7 @@ const upload = multer({ storage: storage });
 
 
 // Route to get all products
-productApp.get("/getProducts", expressAsyncHandler(async (request, response) => {
+productApp.get(`${API_URL}/getProducts`, expressAsyncHandler(async (request, response) => {
     let productCollectionObj = request.app.get("productCollectionObj");
     let result = await productCollectionObj.find().toArray();
 
@@ -50,7 +51,7 @@ productApp.get("/getProducts", expressAsyncHandler(async (request, response) => 
 }));
 
 // Route to get product by id
-productApp.get("/getProduct/:id", expressAsyncHandler(async (request, response) => {
+productApp.get(`${API_URL}/getProduct/:id`, expressAsyncHandler(async (request, response) => {
     let productId = ObjectId(request.params.id);
 
     let productCollectionObj = request.app.get("productCollectionObj");
@@ -64,7 +65,7 @@ productApp.get("/getProduct/:id", expressAsyncHandler(async (request, response) 
 }));
 
 // Route to update product
-productApp.put('/updateProduct', expressAsyncHandler(async (req, res) => {
+productApp.put(`${API_URL}/updateProduct`, expressAsyncHandler(async (req, res) => {
   const updatedProduct = JSON.parse(req.body.productObj);
   const productImage = req.file ? req.file.path : null;
 
@@ -87,7 +88,7 @@ productApp.put('/updateProduct', expressAsyncHandler(async (req, res) => {
 
 
 
-productApp.delete('/removeProduct/:id', expressAsyncHandler(async (request, response) => {
+productApp.delete(`${API_URL}/removeProduct/:id`, expressAsyncHandler(async (request, response) => {
     const productId = request.params.id;
 
     // Convert string ID to ObjectId

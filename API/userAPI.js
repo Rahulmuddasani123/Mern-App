@@ -3,6 +3,7 @@
 const express=require('express')
 const userApp= express.Router()
 const { ObjectId } = require('mongodb');
+import { API_URL } from '../Constants';
 
 
 const expressAsyncHandler=require('express-async-handler')
@@ -45,7 +46,7 @@ userApp.use(express.json());
 
 
 // Route to create user
-userApp.post("/createUser", upload.single('photo'), expressAsyncHandler(async(request, response) => {
+userApp.post(`${API_URL}/createUser`, upload.single('photo'), expressAsyncHandler(async(request, response) => {
 
   console.log(request.file.path)
 
@@ -90,7 +91,7 @@ userApp.post("/createUser", upload.single('photo'), expressAsyncHandler(async(re
 
 
 // Route to login
-userApp.post("/login", expressAsyncHandler(async(request, response) => {
+userApp.post(`${API_URL}/login`, expressAsyncHandler(async(request, response) => {
 
   // Getting collection object
   const userCollectionObj=request.app.get("userCollectionObj")
@@ -133,7 +134,7 @@ userApp.post("/login", expressAsyncHandler(async(request, response) => {
 
 
 // Route to get all users
-userApp.get("/getUsers", async (request, response) => {
+userApp.get(`${API_URL}/getUsers`, async (request, response) => {
   try {
     // Getting collection object
     const userCollectionObj = request.app.get("userCollectionObj");
@@ -155,7 +156,7 @@ userApp.get("/getUsers", async (request, response) => {
 
 // Route to Update user
 
-userApp.put('/updateUser', upload.single('profileImage'), expressAsyncHandler(async (request, response) => {
+userApp.put(`${API_URL}/updateUser`, upload.single('profileImage'), expressAsyncHandler(async (request, response) => {
 
   const updatedUser = JSON.parse(request.body.userObj);
 
@@ -182,7 +183,7 @@ userApp.put('/updateUser', upload.single('profileImage'), expressAsyncHandler(as
 
 
 
-userApp.delete('/removeUser/:id', expressAsyncHandler(async (request, response) => {
+userApp.delete(`${API_URL}/removeUser/:id`, expressAsyncHandler(async (request, response) => {
 
     const userId = request.params.id;
 
