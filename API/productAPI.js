@@ -5,7 +5,7 @@ const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const multer = require('multer');
 const { ObjectId } = require('mongodb');
-import { API_URL } from "../Constants";
+const { API_URL }= require("../Constants");
 
 productApp.use(express.json());
 
