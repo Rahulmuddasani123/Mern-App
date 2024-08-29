@@ -74,8 +74,8 @@ app.use((error,request, response, next) => {
 });
 
 // Replacing port number with env
-let port=process.env.PORT
-app.listen(port, () => console.log("Server is running on port 4000"));
+let port=process.env.PORT || 10000
+app.listen(port, () => console.log("Server is running on port 4000")  );
 
 
 
