@@ -1,0 +1,21 @@
+.u-dashboard-cart-btn{
+    border: none;
+    background-color: transparent;
+    color: rgb(248, 202, 65);
+    font-size: 30px;
+}
+
+.u-dashboard-wish-btn{
+    border: none;
+    color: rgb(253, 54, 54);
+    background-color: transparent;
+    font-size: 28px;
+}
+
+.Products_title{
+    font-size: 48px;
+
+font-family: "Bebas Neue", sans-serif;
+color: #1f316f;
+
+}

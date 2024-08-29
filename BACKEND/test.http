@@ -1,0 +1,108 @@
+POST http://localhost:4000/users/login
+Content-Type: application/json
+
+{
+    "username": "Rahul",
+    "password": "Rahul"
+}
+
+###
+GET http://localhost:4000/users/getUser/1
+
+###
+
+POST http://localhost:4000/users/createUser
+Content-Type: application/json
+
+{
+    "username": "mahesh",
+    "password": "mahesh",
+    "email" : "mahesh@gmail.com"
+}
+
+###
+
+PUT http://localhost:4000/users/updateUser
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Rajesh",
+    "age": 25
+}
+
+###
+
+DELETE http://localhost:4000/users/removeUser/1
+
+
+
+###
+
+GET http://localhost:4000/products/getProducts
+
+###
+GET http://localhost:4000/products/getProduct/400
+
+###
+
+POST http://localhost:4000/products/createProduct
+Content-Type: application/json
+
+{
+    "productId":400,
+    "name": "tab",
+    "price": 30000
+}
+
+###
+
+PUT http://localhost:4000/products/updateProduct
+Content-Type: application/json
+
+{
+    "productId":400,
+    "name": "tab",
+    "price": 70000
+}
+
+###
+
+DELETE http://localhost:4000/products/removeProduct/100
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

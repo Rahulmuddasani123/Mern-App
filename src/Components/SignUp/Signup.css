@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Gruppo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.signup-form-container{
+  width: 100%;
+  border-radius: 20px;
+ margin:30px 0px;
+  padding: 30px;
+    box-shadow: 0px 55px 5000px #95f4cb;
+ 
+}
+
+.signup-header-text{
+    
+    color: #2c2774;
+  text-align: center;
+  font-size: 35px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+.signup-form{
+    text-align: left;
+}
+
+.signup-form-label{
+    color:#2c2774;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 20px 0px 5px 0px;
+}
+.signup-button{
+  font-family: "Gruppo", sans-serif;
+  font-weight: 900;
+  font-style: bold;
+  border: 1px solid #5ae4a8;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  width: 170px;
+  background-color: #5ae4a8;
+  transition: color 0.6s ease, background-color 0.3s ease, border-color 0.3s ease; 
+}
+
+.signup-form-controls {
+  box-shadow: 0 0 8px rgb(224, 224, 224);
+  padding: 6px; 
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 0px;
+  display: block;
+  transition: all 0.3s ease; 
+}
+
+.signup-form-controls:focus {
+  border-color: rgb(23, 15, 1); 
+  box-shadow: 0 0 8px  #95f4cb;
+}
+
+@media (min-width: 992px) { /* Large devices (desktops, 992px and up) */
+  .signup-form-container {
+    text-align: center;
+   
+    border-radius: 20px;
+    width: 450px;
+   padding: 2px  20px 18px 20px;
+    margin-top:10px;
+    box-shadow: 0px 55px 5000px #95f4cb;
+   
+  }
+}
+
+.error-message{
+   font-family: "Gruppo", sans-serif;
+   font-size: 16px;
+   font-weight: bold;
+
+}
+
+
+

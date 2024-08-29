@@ -1,0 +1,53 @@
+
+.Banner-main-header {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 50px; /* Force the font size to apply */
+  margin-top: 15px;
+  color: #1F316F;
+  
+  
+}
+
+
+.Banner-sub-header {
+  font-family: "Gruppo", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 30px !important; 
+  
+}
+
+.banner-shop-now-button {
+  font-family: "Gruppo", sans-serif;
+  font-weight: 900;
+  font-style: bold;
+  border: 1px solid rgb(213, 138, 39);;
+  border-radius: 5px;
+  color: rgb(213, 138, 39);
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  width: 170px;
+  background-color: transparent; 
+  transition: color 0.6s ease, background-color 0.3s ease, border-color 0.3s ease; 
+  box-shadow: 1px 1px 80px rgb(242, 205, 158);
+}
+
+.banner-shop-now-button:hover {
+  color: white;
+  background-color:rgb(213, 138, 39);;
+  border-color: rgb(213, 138, 39); 
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,164 @@
+.products-title{
+  color: #1F316F;
+  text-decoration: none;
+  font-size:40px;
+  margin-right: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: color 0.3s ease, font-size 0.3s ease, text-decoration 5s ease;
+}
+
+.products_wishlist_icon{
+    color: white;
+    font-size: 35px;
+     transition: color 0.3s ease, font-size 0.3s ease ;
+}
+
+.products_wishlist_icon:hover {
+  color: rgb(252, 77, 77); /* Color when toggled */
+}
+
+.products-container {
+  position: relative; 
+  padding: 10px; 
+  margin:12px;
+  margin-top:20px;
+  margin-bottom: 40px;
+}
+
+.product_actions_icon{
+ border: 1px solid black;
+ background-color: black;
+ 
+}
+
+.view_product_button{
+  font-family: "Gruppo", sans-serif;
+  font-size:  16px;
+  font-weight: bold;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 1px;
+  padding: 5px;
+  width:100%;
+  transition: color 0.5s ease;
+}
+
+.view_product_button:hover{
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    
+}
+
+.addtocart_button{
+
+     background-color: rgb(42, 106, 42);
+  color: white;
+  border-radius: 2px;
+   border: none;
+   padding: 13px;
+   font-weight: 500;
+transition: color 0.5s ease;
+
+}
+
+.addtowishlist_button{
+  background-color: rgb(253, 96, 96);;
+  color: white;
+  border-radius: 2px;
+   border: none;
+   padding: 13px;
+   font-weight: 500;
+transition: color 0.5s ease;
+}
+.view_product_brand_header{
+    font-size: 28px;
+     font-family: "Gruppo", sans-serif;
+     font-weight: bold;
+     color: #1F316F;
+}
+
+.view_product_name{
+    font-size: 16px;
+     font-family: "Comfortaa", sans-serif;
+     font-weight: 100;
+     padding: 0px;
+     margin: 0px;
+     color: #1F316F;
+}
+.view_description{
+
+   font-size: 12px;
+     font-family: "Comfortaa", sans-serif;
+     font-weight: 100;
+     padding: 0px;
+     margin: 0px;
+     color: #1F316F;
+
+}
+
+.product_color-header {
+
+     font-size: 15px;
+     font-family: "Comfortaa", sans-serif;
+     font-weight: 800;
+     padding: 0px;
+     margin-top: 15px;
+     color: #1F316F;
+
+}
+
+.product_price-header{
+    font-size: 15px;
+     font-family: "Comfortaa", sans-serif;
+     font-weight: 800;
+     padding: 0px;
+     margin-top: 15px;
+     color: #1F316F;
+
+}
+
+
+.view_product_price{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight:500 ;
+    color: #1F316F;
+   
+    font-size: 30px;
+}
+
+
+/* Hide default radio button */
+.radio-buttons input[type="radio"] {
+    display: none;
+}
+  
+/* Style the label to look like a button */
+.radio-buttons label.radio-button {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    border: 1px solid #1F316F;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #1F316F;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Style the label when the radio button is selected */
+.radio-buttons input[type="radio"]:checked + label.radio-button {
+    background-color: #1F316F;;
+    color: #ffffff;
+    border-color: #1F316F;;
+}
+
+/* Optional: Add hover effect */
+.radio-buttons label.radio-button:hover {
+    background-color: #e2e6ea;
+    color: #0056b3;
+}

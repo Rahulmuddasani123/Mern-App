@@ -1,0 +1,127 @@
+
+/* foooter icons Section */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.footer{
+   margin-top: 0px;
+  background-color: #1F316F;
+  padding: 20px 0px 10px 0px;
+  border-bottom: 1px solid rgb(213, 138, 39);
+  
+}
+
+.footer-icon{
+  width: 40px;
+  color: white;
+  margin:15px;
+  font-size:18px;
+  transition: color 0.6s ease, font-size 0.3s ease; 
+}
+
+.footer-icon:hover{
+  width: 40px;
+  color: rgb(213, 138, 39);
+  font-size:20px;
+}
+
+.footer-follow-text{
+  color: white;
+   font-family: "Inter", sans-serif;
+   font-weight: 500;
+}
+
+
+.footer-icon-container{
+  text-align:center;
+  border-bottom: 1px solid rgb(213, 138, 39);
+  padding: 0px 0px 8px 0px;
+}
+
+
+/* Main Section */
+
+.footer-main-header{
+  color: white;
+ font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-main-description{
+   color: white;
+  font-family: "Inter", sans-serif;
+   font-size: 12px;
+   font-weight: 300;
+   text-align: justify;
+   padding-right: 25px;
+   line-height: 23px;
+}
+
+.footer-main-link{
+
+   color: white;
+   font-family: "Inter", sans-serif;
+   font-size: 12px;
+   font-weight: 300;
+   text-align: justify;
+   margin-bottom:18px;
+   
+  transition: color 0.6s ease; 
+}
+
+.footer-main-link:hover{
+color:rgb(213, 138, 39);
+font-weight: 400;
+cursor: pointer;
+
+}
+
+.footer-submit-button{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  border: 1px solid rgb(213, 138, 39);;
+  border-radius: 5px;
+  color: rgb(213, 138, 39);
+  padding: 5px;
+  margin-top: 0px;
+  font-size: 13px;
+  width: 100px;
+  background-color: transparent; 
+  transition: color 0.6s ease, background-color 0.3s ease, border-color 0.3s ease; 
+}
+.footer-submit-button:hover{
+   color: white;
+  background-color:rgb(213, 138, 39);;
+  border-color: rgb(213, 138, 39); 
+}
+
+.footer-submit-icon{
+  font-size: 15px;
+  padding-bottom: 2px;
+}
+
+.footer-input{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+/* Copyright Section */
+
+.copyright-footer{
+  text-align: center;
+  color: white;
+  background-color:  #1F316F;
+  padding: 15px 0px 15px 0px;
+  border-top: 1px solid rgb(213, 138, 39);
+}
+
+.copyright-text{
+ font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+}
+
+

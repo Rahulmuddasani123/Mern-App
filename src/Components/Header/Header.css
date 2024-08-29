@@ -1,0 +1,70 @@
+.Nav-Link {
+  color: #1F316F;
+  text-decoration: none;
+  font-size: 22px;
+  margin-right: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: color 0.3s ease, font-size 0.3s ease, text-decoration 5s ease;
+  display: flex;
+  align-items: center;
+  
+
+}
+.Nav-Link-Profile{
+
+   color: #1F316F;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 50px;
+  font-family: "Comfortaa", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: color 0.3s ease, font-size 0.3s ease, text-decoration 5s ease;
+  display: flex;
+  align-items: center;
+
+}
+.dropdown-item{
+  font-size: 12px;
+}
+
+.Nav-Link:hover {
+  color: rgb(213, 138, 39);
+  font-size: 24px;
+  text-decoration: underline;
+}
+.Nav-Link:focus {
+  color: rgb(213, 138, 39);
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.li-it{
+   font-family: "Comfortaa", sans-serif;
+  color: black;
+  font-size: 12px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+

@@ -1,0 +1,57 @@
+.aboutus-main-header{
+     color: #1F316F;
+  text-decoration: none;
+  text-align: center;
+  font-size:40px;
+  margin-right: 50px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: color 0.3s ease, font-size 0.3s ease, text-decoration 5s ease;
+}
+
+.aboutus-description{
+    color: #1F316F;
+   font-family: "Comfortaa", sans-serif;
+   font-size: 16px;
+   font-weight: 100;
+   text-align: justify;
+   margin-top: 20px;
+}
+
+.Mission-container{
+    margin-top: 150px;
+}
+
+.mission-sub-header
+{
+    color: #1F316F;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 13px;
+}
+
+.collections-sub-header{
+     color: #1F316F;
+   font-family: "Comfortaa", sans-serif;
+     font-weight: bold;
+    font-size: 20px;
+    margin-top: 13px;
+    list-style-type:none;
+}
+
+.aboutus-slogan-text{
+color: rgb(213, 138, 39);
+   font-family: "Comfortaa", sans-serif;
+     font-weight: bold;
+    font-size: 25px;
+    margin-top: 13px;
+}
+
+.aboutus-thankyou-text{
+ color: #1F316F;
+   font-family: "Comfortaa", sans-serif;
+     font-weight: normal;
+    font-size: 20px;
+   
+}

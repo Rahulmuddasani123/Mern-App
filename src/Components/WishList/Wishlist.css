@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300..700&family=Gruppo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.wishlist-title{
+  color: #1F316F; 
+  text-decoration: none;
+  font-size:40px;
+  margin-right: 50px;
+  margin-bottom:0px;
+  font-weight: 600;
+  font-style: normal;
+  transition: color 0.3s ease, font-size 0.3s ease, text-decoration 5s ease;
+}
+
+.wishlist-container {
+  position: relative; 
+  padding: 10px; 
+  margin:12px;
+  margin-top:20px;
+  margin-bottom: 40px;
+}
+
+.wishlist-container:hover{
+transform: rotate(20);
+}
+
+@media (min-width: 992px) {
+    .wishlist-container {
+        margin:15px 15px 45px 0px;
+    }
+}
+
+.wishlist-actions {
+  position: absolute; 
+  top: 5px; 
+  right: 10px;
+}
+
+.wishlist-icon{
+    color:#1F316F; 
+    font-size: 20px;
+    margin-right: 10px;
+    transition: color 0.3s ease, font-size 0.3s ease ;
+}
+
+.wishlist-icon:hover {
+  color: rgb(252, 77, 77); /* Color when toggled */
+}
+
+.add-cart-icon{
+color:#1F316F; 
+    font-size: 20px;
+    margin-right: 10px;
+    transition: color 0.3s ease, font-size 0.3s ease ;
+}
+
+.add-cart-icon:hover{
+  color: rgb(73, 146, 97); /* Color when toggled */
+
+}
+
+
+.remove-icon{
+    color:#1F316F; 
+    
+    font-size: 20px;
+    font-weight: bold;
+     margin-right: 10px;
+     transition: color 0.3s ease, font-size 0.3s ease, ;
+}
+
+.remove-icon:hover{
+    color:rgb(252, 77, 77); 
+    font-size: 20px;
+    margin-right: 10px;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.brand-header{
+
+    color:#1F316F;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.brand-price{
+
+    color:#1F316F;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    margin-top:10px;
+
+}
+
+.brand-content{
+
+    color:#1F316F;
+    font-family: "Inter", sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+
+
+}
+
+.view_product_brand_header{
+  font-family: "Inter", sans-serif;
+}
+
+.view_product_name{
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+
+}
+.view_product_button{
+  background-color:#1F316F;
+}
+
+.view_product_button:hover{
+  background-color:white;
+  color: #1F316F;
+  border: 2px solid #1F316F;
+
+}
+
+
+.wishlist-back-button
+{
+ 
+    border: 2px solid #1F316F;
+  background-color:white ;
+  border-radius: 3px;
+  padding: 7px;
+  margin: 10px;
+  margin-bottom:30px;
+  color:#1F316F;
+  font-weight: bold;
+  font-size: 15px;
+  transition: color 0.3s ease  ;
+
+
+}
+.wishlist-back-button:hover
+{
+   border: 2px solid #1F316F;
+  background-color:#1F316F ;
+  border-radius: 3px;
+  padding: 7px;
+  margin: 10px;
+   margin-bottom:30px;
+  color:white;
+  font-weight: bold;
+ 
+  font-size: 15px;
+}
+
+.wishlist-cart-button
+{
+  border: 2px solid #ffc107;
+  background-color:#ffc107 ;
+  border-radius: 3px;
+  padding: 7px;
+  margin: 10px;
+   margin-bottom:30px;
+  color:white;
+  font-weight: bold;
+  
+  font-size: 15px;
+  transition: color 0.3s ease  ;
+}
+.wishlist-cart-button:hover
+{
+  border: 2px solid #ffc107;
+  background-color:white ;
+  border-radius: 3px;
+  padding:7px;
+  margin: 10px;
+   margin-bottom:30px;
+  color:#ffc107;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.add_to_cart_button{
+  background-color: rgb(42, 106, 42);
+  color: white;
+  border-radius: 2px;
+   border: none;
+   padding: 13px;
+   font-weight: 500;
+}
+
+.add_to_cart_button:hover{
+  background-color: rgb(51, 119, 51);
+  
+}
+
+.remove_from_wishlist_button{
+  
+  background-color:rgb(255, 86, 86) ;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  padding: 13px;
+  font-weight: 500;
+
+}
+
+.remove_from_wishlist_button:hover{
+  background-color: rgb(253, 96, 96);
+
+}
+
+.product_color-header{
+  margin:0px;
+  padding: 0px;
+   font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+
+}
+.view_description{
+
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  text-align: justify;
+  font-size: 12px;
+
+}
+
+
+
+
+
+
+
+
+
+
