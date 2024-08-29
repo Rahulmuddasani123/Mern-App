@@ -3,7 +3,8 @@
 const express=require('express')
 const userApp= express.Router()
 const { ObjectId } = require('mongodb');
-import { API_URL } from '../Constants';
+const { API_URL } = require("../Constants");
+
 
 
 const expressAsyncHandler=require('express-async-handler')
