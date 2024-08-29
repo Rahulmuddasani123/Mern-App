@@ -2,6 +2,15 @@ const express = require("express");
 const app = express();
 const MongoClient = require("mongodb").MongoClient;
 
+const cors = require("cors");
+
+// Use CORS middleware
+app.use(
+  cors({
+    origin: "https://classy-rugelach-8e5c23.netlify.app", // Replace with your Netlify site URL
+  })
+);
+
 //import dotenv
 require('dotenv').config()
 

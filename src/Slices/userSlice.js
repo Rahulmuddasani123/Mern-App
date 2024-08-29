@@ -1,10 +1,11 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+import { API_URL } from '../../Constants';
 
 // Create an async thunk for handling user login
 export const userLogin = createAsyncThunk('loginuser', async (userCredentialsObj, thunkapi) => {
   try {
-    const response = await axios.post('/users/login', userCredentialsObj);
+    const response = await axios.post(`${API_URL}/users/login`, userCredentialsObj);
     let data = response.data;
     
     if (data.Message === 'success') {
@@ -21,13 +22,13 @@ export const userLogin = createAsyncThunk('loginuser', async (userCredentialsObj
 
 
 export const fetchusers=createAsyncThunk('users/getUsers',async()=>{
-  let response=await axios.get('/users/getUsers')
+  let response = await axios.get(`${API_URL}/users/getUsers`);
   console.log(response)
   return response.data.users
 })
 
 export const deleteUser = createAsyncThunk('users/removeUser', async (userId) => {
-    const response = await axios.delete(`/users/removeUser/${userId}`);
+    const response = await axios.delete(`${API_URL}/users/removeUser/${userId}`);
     return response.data;
 });
 
@@ -36,7 +37,7 @@ export const deleteUser = createAsyncThunk('users/removeUser', async (userId) =>
 // update from cart
 export const updateUser = createAsyncThunk('users/updateUser', async (updatedUserObj, thunkAPI) => {
     try {
-        let response = await axios.put('/cart/updatecartitem',updatedUserObj);
+        let response = await axios.put(`${API_URL}/cart/updatecartitem`,updatedUserObj);
         return response.data.updatedUser
         
     } catch (err) {
